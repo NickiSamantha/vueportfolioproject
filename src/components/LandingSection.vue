@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid mt-5">
       <div class="row vh-100 align-items-center">
-        <div class="col">
+        <div class="col mt-5">
           <img
             src="https://nickisamantha.github.io/allImages/images/Nicki.jpg"
             alt="profile"

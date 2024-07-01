@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="navbar navbar-expand-lg sticky-sm-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
   
     <div class="container-fluid">
   
