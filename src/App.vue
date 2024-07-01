@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <NavBar/>
+    <NavBar></NavBar>
     <main class="container-fluid">
       <router-view />
     </main>
@@ -9,15 +9,13 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
-import FooterComp from '@/components/Footer'
-export default{
-  components : {
+import NavBar from '@/components/NavBar.vue';
+import FooterComp from '@/components/Footer.vue'
+export default {
+  components: {
     NavBar,
-    FooterComp
-  }
-}
+    FooterComp,
+  },
+};
 </script>
-<style >
-
-</style>
+<style></style>
