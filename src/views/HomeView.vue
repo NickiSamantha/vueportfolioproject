@@ -3,7 +3,9 @@
     <section class="row" id="landing">
       <LandingSection/>
     </section>
-    <section class="row" id=""></section>
+    <section class="row" id="about">
+      <AboutSection/>
+    </section>
     <section class="row" id=""></section>
     <section class="row" id=""></section>
     <section class="row" id=""></section>
@@ -13,12 +15,14 @@
 
 <script>
 import LandingSection from '@/components/LandingSection.vue';
+import AboutSection from '@/components/AboutSection.vue'
 
 
 export default {
   name: 'HomeView',
   components: {
-  LandingSection
+  LandingSection,
+  AboutSection
   }
 }
 </script>

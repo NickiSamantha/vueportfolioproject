@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg sticky-sm-top">
   
     <div class="container-fluid">
   
@@ -18,7 +18,7 @@
             
   
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#landing"> <i class="fa-solid fa-house-chimney"></i> Home</a>
+            <a class="nav-link " aria-current="page" href="#landing"> <i class="fa-solid fa-house-chimney"></i> Home</a>
           </li>
   
           <li class="nav-item">
