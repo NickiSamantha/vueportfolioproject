@@ -11,17 +11,25 @@
   
   nav {
     padding: 30px;
+    
   }
   
   nav a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #C0E9ED;
   }
   
   nav a.router-link-exact-active {
     color: #be2aa3;
   }
 
+  .navbar {
+    background-color: #FCE6D3;
+  }
+ .dropdown-menu {
+    background-color: #FCE6D3;
+    
+ }
 /* Universal selector*/
 
 /* Custom variables */ 
@@ -33,14 +41,20 @@ img {
     aspect-ratio: 1 ;
     object-fit: cover; /*change between cover and contain*/
     object-position: center;
+    border-radius: 1rem;
 }
 img[alt='logo'] {
     width: 5rem ;
+    border: 1px solid black;
 }
 
 /*wrapper*/
 :is(.wrapper){
     display: grid;
     grid-template-rows: auto minmax(100dvh, 100%) auto;
-    background-color: pink;
+    background-color: #FCE6D3;
+}
+/*Fonts*/
+.display-1 {
+ font-family: "Playfair Display", serif;
 }

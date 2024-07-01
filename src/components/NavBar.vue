@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
   
     <div class="container-fluid">
   
@@ -15,36 +15,40 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
   
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#landing">Home</a>
+            <a class="nav-link active" aria-current="page" href="#landing"> <i class="fa-solid fa-house-chimney"></i> Home</a>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about"> <i class="fa-regular fa-address-card"></i> About</a>
           </li>
   
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#resume" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#resume" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-regular fa-file"></i>
               Resume
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#education">Education</a></li>
-              <li><a class="dropdown-item" href="#skills">Skills</a></li>
-              <li><a class="dropdown-item" href="#workexperience">Work Experience</a></li>
+              <li><a class="dropdown-item" href="#education"> <i class="fa-solid fa-school"></i> Education</a></li>
+              <li><a class="dropdown-item" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
+              <li><a class="dropdown-item" href="#workexperience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
             </ul>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
+            
+            <a class="nav-link" href="#testimonials"> <i class="fa-solid fa-receipt"></i> Testimonials</a>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" href="#project">Project</a>
+            
+            <a class="nav-link" href="#project"> <i class="fa-solid fa-diagram-project"></i> Project</a>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" href="#reachMe">Reach Me</a>
+            
+            <a class="nav-link" href="#reachMe"> <i class="fa-regular fa-address-book"></i> Reach Me</a>
           </li>
   
         </ul>
