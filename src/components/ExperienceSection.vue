@@ -47,5 +47,4 @@ export default {
 .container {
     background-color: #C0E9ED;
 }
-
 </style>
