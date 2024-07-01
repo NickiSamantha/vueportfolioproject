@@ -32,7 +32,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#education"> <i class="fa-solid fa-school"></i> Education</a></li>
               <li><a class="dropdown-item" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
-              <li><a class="dropdown-item" href="#workexperience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
+              <li><a class="dropdown-item" href="#experience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
             </ul>
           </li>
   

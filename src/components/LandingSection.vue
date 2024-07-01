@@ -11,11 +11,11 @@
         </div>
         <div class="col">
           <div id="details">
-            <h1 class="display-1">NICKI ABELS</h1>
+            <h1 class="display-1 ">NICKI ABELS</h1>
             <p v-if="jobTitle ">
               I am an aspiring 
               <span>{{ title }} </span>
-              <span class="d-block">{{ jobTitle[0]?.personalStatement }}</span>
+              <!-- <span class="d-block">{{ jobTitle[0]?.personalStatement }}</span> -->
             </p>
            <Spinner v-else/>
           </div>
