@@ -1,7 +1,7 @@
 import { createStore } from "vuex";
 import axios from "axios";
 import Swal from "sweetalert2/dist/sweetalert2";
-const portfolioURL = "https://nickisamantha.github.io/SampleData/data";
+const portfolioURL = "https://nickisamantha.github.io/SampleData/data/";
 
 export default createStore({
   state: {
@@ -37,7 +37,7 @@ export default createStore({
     async fetchJobTitle(context) {
       try {
         let { jobTitle } = await (await axios.get(portfolioURL)).data;
-        context.commit("setobTitle", jobTitle);
+        context.commit("setJobTitle", jobTitle);
       } catch (e) {
         Swal.fire({
           title: "Error",
