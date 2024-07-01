@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
       <div class="row vh-100 align-items-center">
         <div class="col">
           <img
@@ -12,9 +12,10 @@
         <div class="col">
           <div id="details">
             <h1 class="display-1">NICKI ABELS</h1>
-            <p v-if="title">
+            <p v-if="jobTitle ">
               I am an aspiring 
               <span>{{ title }} </span>
+              <span class="d-block">{{ jobTitle[0]?.personalStatement }}</span>
             </p>
            <Spinner v-else/>
           </div>
