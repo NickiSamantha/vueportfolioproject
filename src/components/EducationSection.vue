@@ -44,6 +44,7 @@
       padding: 5px ;
       background: #CDEDDD;
       width: 50%;
+      
 
   }
   .container {
