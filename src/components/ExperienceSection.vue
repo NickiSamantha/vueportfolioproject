@@ -1,5 +1,5 @@
 <template>
-    <div class="container align-items-center  pt-5">
+    <div class="container align-items-center pt-5">
     <div class="row mt-5 pt-3">
       <h2>Experience</h2>
     </div>

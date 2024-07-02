@@ -43,7 +43,7 @@
   
           <li class="nav-item">
             
-            <a class="nav-link" href="#project"> <i class="fa-solid fa-diagram-project"></i> Project</a>
+            <a class="nav-link" href="#projects"> <i class="fa-solid fa-diagram-project"></i> Projects</a>
           </li>
   
           <li class="nav-item">

@@ -50,8 +50,7 @@ img[alt='logo'] {
 
 /*wrapper*/
 :is(.wrapper){
-    display: grid;
-    grid-template-rows: auto minmax(100dvh, 100%) auto;
+    
     background-color: #FCE6D3;
 }
 /*Fonts*/
@@ -62,20 +61,53 @@ img[alt='logo'] {
 /*About*/
 .about-text {
     margin-bottom: 1rem;
-    font-size: medium;
+    /* font-size: medium; */
   }
-  
-  @media (min-width: 992px) {
-    .img-fluid {
-      width: 100%;
-      height: auto;
+
+  .Bg {
+
+    background-color: #fbb7c7;
+
+
+  }
+  .Bg h1 {
+
+    font-family: "Playfair Display", serif;
+
+  }
+
+  @media only screen and (max-width:720px) {
+ 
+    .Bg {
+
+      flex-direction:column;
+      
+    } 
+    :is(.wrapper){
+       width:100%;
+       overflow: hidden;
+      background-color: #FCE6D3;
+  }
+
+  }
+    @media (max-width: 900px) {
+      .card {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space between cards */
+      }
     }
-  }
-  
-  @media (max-width: 991.98px) {
-    .row.align-items-center {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+    
+    .card-header {
+      text-align: center; /* Center the content of card header */
     }
-  }
+    
+    .card-body {
+      padding: 1rem;
+      
+    }
+
+
+  
+
+
+  

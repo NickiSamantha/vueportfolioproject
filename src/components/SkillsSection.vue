@@ -1,6 +1,6 @@
 <template>
-    <div class="skills-container mt-5">
-      <div class="container mt-5 pt-4">
+    <div class="skills-container  ">
+      <div class="container mt-5 pt-5 ">
         <h2>SKILLS</h2>
         <div class="row mt-5">
           <h3>Technical Skills</h3>
@@ -78,6 +78,7 @@
   <style scoped>
   .skills-container {
     margin-top: 20px;
+
   }
   
   .skills-row {
@@ -85,7 +86,7 @@
   }
   
   .flip-card {
-    background-color: transparent;
+    background-color: #b7dbc9;
     width: 100%;
     height: 250px;
     perspective: 1000px;
@@ -157,6 +158,12 @@
     padding: 10px;
     word-wrap: break-word;
     text-align: center;
+  }
+  .skill-icon, 
+  .skill-title {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 
 }

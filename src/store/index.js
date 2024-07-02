@@ -34,6 +34,9 @@ export default createStore({
       state.softskills = value;
     },
     setTestimonials(state, value) {
+      state.testimonials = value;
+    },
+    setProjects(state, value) {
       state.projects = value;
     },
   },
