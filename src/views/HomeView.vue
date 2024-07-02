@@ -15,6 +15,12 @@
     <section class="row" id="experience">
       <ExperienceSection/>
     </section>
+    <section class="row" id="testimonials">
+     <TestimonialsSection/> 
+    </section>
+    <section class="row" id="projects">
+      <ProjectsSection/>
+    </section>
     <section class="row" id=""></section>
  </div>
 </template>
@@ -25,6 +31,8 @@ import AboutSection from '@/components/AboutSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import TestimonialsSection from '@/components/TestimonialsSection.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -32,7 +40,11 @@ export default {
   AboutSection,
   EducationSection,
   SkillsSection,
-  ExperienceSection
+  ExperienceSection,
+  TestimonialsSection,
+  ProjectsSection
+  
+  
 
   }
 }

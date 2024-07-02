@@ -6,7 +6,7 @@
       </div>
       <div class="row mt-5" v-if="education?.length">
         <div v-for="(self, id) in education" :key="id">
-          <div class="border-resume lead  m-auto mb-4 mt-4 shadow-lg ">
+          <div class="border-resume lead m-auto p-2 mb-4 mt-4 shadow-lg ">
               <p> {{ self.year }} </p>   
               <p> {{ self.place }}</p>   
               <p> {{ self.courseName }}</p>   
@@ -43,8 +43,8 @@
       border:5px solid #C0E9ED;
       padding: 5px ;
       background: #CDEDDD;
-      width: 50%;
-      
+      width: 65%;
+
 
   }
   .container {
