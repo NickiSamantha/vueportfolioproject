@@ -26,6 +26,5 @@
 
 <style scoped>
 .background{
-    background: linear-gradient( #fce6d3, #fad9d5, #fbb7c7);
-}
+    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);}
 </style>

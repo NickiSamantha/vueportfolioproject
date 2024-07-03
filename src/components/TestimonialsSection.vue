@@ -1,10 +1,18 @@
 <template>
-  
     <div class="container-fluid mt-5 pt-5 Bg">
-      
-    <div class="row pt-3 p-4 gap-4 col-12" v-if="testimonials?.length">
-      <h1>TESTIMONIALS</h1>
-      <CardComp v-for="(self, index) in testimonials" :key="index" class="col-md-4 col-sm-12 p-2">
+    <div class="row pt-3 p-4 gap-4 col-12" 
+       v-if="testimonials?.length">
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        TESTIMONIALS
+      </h1>
+      <CardComp 
+      v-for="(self, index) in testimonials" 
+      :key="index" 
+      class="col-md-4 col-sm-12 p-2 card"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 100"
+      >
         <template #cardHeader>
           <img
             class="img-fluid"
@@ -30,6 +38,8 @@
   <script>
   import SpinnerComp from "@/components/Spinner.vue";
   import CardComp from "@/components/Card.vue";
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
   export default {
     name: "TestimonialsComp",
   
@@ -45,7 +55,29 @@
       SpinnerComp,
       CardComp,
     },
-  };
+
+    beforeUnmount() {
+    window.removeEventListener('scroll', this.initAOS);
+  },
+    mounted() {
+    this.initAOS();
+    window.addEventListener('scroll', this.initAOS);
+  },
+
+
+
+  methods: {
+    initAOS() {
+      AOS.init({
+        offset: 200,
+        duration: 2000,
+        easing: 'ease',
+        once: false,
+        anchorPlacement: 'bottom-top' // Ensure AOS triggers based on element's position
+      });
+    }
+  }
+};
   </script>
  
   
@@ -53,7 +85,7 @@
 
  
 
-
+@import 'aos/dist/aos.css';
 
 .row {
   display: flex;
@@ -68,6 +100,7 @@
   height: 550px; 
   overflow: hidden;
   background-color: #f7e8ef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
@@ -79,6 +112,17 @@
 .quote-container {
   height: 200px;
   overflow-y: auto;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f1bed5; /* Change background color on hover */
+}
+
+.card:hover .quote-text {
+  color: #0c0c0c; /* Change text color on hover */
 }
 
  </style>

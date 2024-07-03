@@ -24,8 +24,7 @@
   }
 
   .navbar {
-    background: linear-gradient( #daede4, #c0e9ed);
-  }
+    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);}
  .dropdown-menu {
   background: linear-gradient( #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
     
@@ -70,13 +69,6 @@ img[alt='logo'] {
     margin-bottom: 1rem;
     /* font-size: medium; */
   }
-/* 
-  .Bg {
-
-    background-color: #fbb7c7;
-
-
-  } */
   .Bg h1 {
 
     font-family: "Playfair Display", serif;
@@ -93,7 +85,7 @@ img[alt='logo'] {
     :is(.wrapper){
        width:100%;
        overflow: hidden;
-      background-color: #FCE6D3;
+      
   }
 
   /*animation media query*/
@@ -123,19 +115,28 @@ img[alt='logo'] {
   img, #details {
     animation: hop 2s ease-in-out;
   }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f4dde6; 
+  }
+  
+  .card:hover .quote-text {
+    color: #0c0c0c; 
+  }
 }
 
 
   
     @media (max-width: 900px) {
       .card {
-        width: 100%; /* Full width on mobile */
-        margin-bottom: 20px; /* Space between cards */
+        width: 100%; 
+        margin-bottom: 20px;
       }
     }
     
     .card-header {
-      text-align: center; /* Center the content of card header */
+      text-align: center;
     }
     
     .card-body {
