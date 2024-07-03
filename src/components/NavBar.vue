@@ -5,7 +5,7 @@
     <div class="container-fluid">
   
       <a class="navbar-brand" href="#landing">
-          <img src="https://nickisamantha.github.io/allImages/images/logo.png" alt="logo" class="img-fluid" loading="lazy">
+          <img src="https://nickisamantha.github.io/allImages/images/logo.png" alt="logo" class=" btn img-fluid" loading="lazy">
       </a>
   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
