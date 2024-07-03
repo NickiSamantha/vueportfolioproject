@@ -1,8 +1,9 @@
 <template>
   
-    <div class="container-fluid mt-5 Bg">
+    <div class="container-fluid mt-5 pt-5 Bg">
+      
+    <div class="row pt-3 p-4 gap-4 col-12" v-if="testimonials?.length">
       <h1>TESTIMONIALS</h1>
-    <div class="row pt-2 p-4 gap-4 col-12" v-if="testimonials?.length">
       <CardComp v-for="(self, index) in testimonials" :key="index" class="col-md-4 col-sm-12">
         <template #cardHeader>
           <img

@@ -3,20 +3,23 @@
    <div class="row mt-4">
      <h1 class="display-1">PROJECTS</h1>
    </div>
-   <div class="row items" v-if="projects?.length">
+   <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
      <CardComp v-for="(self, id) in projects" :key="id">
        
         <template #cardHeader>
-          <p> {{ self.name }} </p>   
+          <p class="name-header"> {{ self.name }} </p>   
            <img
-            class="img-fluid w-25"
+            class="img-fluid"
             :src="self.image"
             :alt="self.name"
             loading="lazy"
           />
         </template>
           <template #cardBody>
-            <p>{{ self.description }}</p>
+            <div class="description-container">
+              <p class="description-text">{{ self.description }}</p>
+            </div>
+            
            <a :href="self.github" target="_blank" class="btn pink-border">
             <i class="fa-brands fa-github"></i>
           </a>
@@ -54,7 +57,11 @@ export default {
 
 <style  scoped>
 
-
+.name-header {
+  height: 50px;
+  text-align: center;
+  
+}
 
 .btn {
   margin: 5px;
@@ -72,5 +79,26 @@ export default {
   color: white;
 }
 
+.description-container {
+  height: 100px;
+  overflow-y: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 50%;
+  height: auto;
+}
 </style>
