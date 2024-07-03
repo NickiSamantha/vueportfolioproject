@@ -67,6 +67,8 @@
   justify-content: space-between;
   height: 550px; 
   overflow: hidden;
+  background-color: #f7e8ef;
+
 }
 
 .card-header img {

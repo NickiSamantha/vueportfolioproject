@@ -78,6 +78,7 @@
   <style scoped>
   .skills-container {
     margin-top: 20px;
+    background-color: #d7f4f6;
 
   }
   
@@ -86,7 +87,7 @@
   }
   
   .flip-card {
-    background-color: #b7dbc9;
+    background-color: #fce6d3;
     width: 100%;
     height: 250px;
     perspective: 1000px;
@@ -123,7 +124,7 @@
   }
   
   .flip-card-back {
-    background-color: #cff6e2;
+    background-color: #fce6d3;
     color: #333;
     padding: 20px;
     transform: rotateY(180deg);
@@ -142,11 +143,7 @@
     font-size: 18px;
     margin-bottom: 5px;
   }
-
-  .skills-container {
-    background-color: #C0E9ED;
-  }
-
+  
   @media (max-width: 768px) {
   .flip-card-inner {
     height: auto;
@@ -169,7 +166,7 @@
   /*remve this if it doesn't work */
 
   .flip-card {
-    background-color: #cff6e2;
+    background-color: #fce6d3;
     width: 100%;
     height: 250px;
     perspective: 1000px;
@@ -206,7 +203,7 @@
   }
   
   .flip-card-back {
-    background-color: #cff6e2;
+    background-color: #fce6d3;
     color: #0c0c0c;
     padding: 3px;
     transform: rotateY(180deg);

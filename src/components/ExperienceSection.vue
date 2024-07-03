@@ -1,5 +1,5 @@
 <template>
-    <div class="container align-items-center pt-5">
+    <div class="container align-items-center pt-5 pb-4">
     <div class="row mt-5 pt-3">
       <h2>Experience</h2>
     </div>
@@ -45,6 +45,6 @@ export default {
     background: #CDEDDD;  
 }
 .container {
-    background-color: #C0E9ED;
+  background-color: #d7f4f6;
 }
 </style>

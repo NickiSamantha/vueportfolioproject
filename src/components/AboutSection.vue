@@ -1,9 +1,9 @@
 <template>
     <div class="container mt-5 mb-5 pb-5">
-      <div class="row align-content-center mt-5">
+      <div class="row align-content-center mt-5 pt-4">
         <h1 class="display-1">About</h1>
       </div>
-      <div class="row align-items-center mt-5" v-if="about?.length">
+      <div class="row align-items-center mt-5 pt-" v-if="about?.length">
         <div class="col-lg-6 col-12">
             <img src="https://nickisamantha.github.io/allImages/images/nickiaboutimg.jpg" alt="" class="img-fluid w-50 " loading="lazy">
        
@@ -38,5 +38,5 @@
   </script>
   
   <style scoped>
-   
+
   </style>

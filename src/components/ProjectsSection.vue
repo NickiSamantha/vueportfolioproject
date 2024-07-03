@@ -95,6 +95,7 @@ export default {
   justify-content: space-between;
   height: 400px; 
   overflow: hidden;
+  background-color: #f7e8ef;
 }
 
 .card-header img {
