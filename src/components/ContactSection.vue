@@ -74,7 +74,7 @@
     padding: 1.875rem;
     border: 1px solid pink;
     border-radius: 0.5rem;
-
+   background: #fdeeed;
 }
 .contact-card {
     max-width: 25rem;
@@ -82,6 +82,7 @@
     padding: 1.875rem;
     border-radius: 0.5rem;
     border: 1px solid pink;
+    background: #fdeeed;
 }
 .social-icons {
     list-style: none;

@@ -1,9 +1,9 @@
 <template>
     
-    <div class="container-fluid">
+    <div class="container-fluid background">
         <!-- /*take the entire width of a page*/ -->
 
-<div class="row sticky-bottom">
+<div class="row sticky-bottom pt-3">
     <p class="lead">Nicki's Portfolio &copy; 
         <span> {{ cYear }}</span>
     </p>
@@ -24,6 +24,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.background{
+    background: linear-gradient( #fce6d3, #fad9d5, #fbb7c7);
+}
 </style>
