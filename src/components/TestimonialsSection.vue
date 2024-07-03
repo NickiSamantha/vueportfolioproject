@@ -4,7 +4,7 @@
       
     <div class="row pt-3 p-4 gap-4 col-12" v-if="testimonials?.length">
       <h1>TESTIMONIALS</h1>
-      <CardComp v-for="(self, index) in testimonials" :key="index" class="col-md-4 col-sm-12">
+      <CardComp v-for="(self, index) in testimonials" :key="index" class="col-md-4 col-sm-12 p-2">
         <template #cardHeader>
           <img
             class="img-fluid"

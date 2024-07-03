@@ -2,7 +2,7 @@
 /* App */
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -45,7 +45,14 @@ img {
 }
 img[alt='logo'] {
     width: 5rem ;
-    border: 1px solid black;
+    border: 1px solid pink;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+  background-color: rgb(251, 211, 217);
+  color: white;
 }
 
 /*wrapper*/
@@ -88,6 +95,7 @@ img[alt='logo'] {
        overflow: hidden;
       background-color: #FCE6D3;
   }
+
 
   }
     @media (max-width: 900px) {

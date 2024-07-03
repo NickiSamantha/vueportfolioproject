@@ -4,7 +4,7 @@
      <h1 class="display-1">PROJECTS</h1>
    </div>
    <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
-     <CardComp v-for="(self, id) in projects" :key="id">
+     <CardComp v-for="(self, id) in projects" :key="id" class="p-2">
        
         <template #cardHeader>
           <p class="name-header"> {{ self.name }} </p>   
@@ -58,7 +58,7 @@ export default {
 <style  scoped>
 
 .name-header {
-  height: 50px;
+  height: 30px;
   text-align: center;
   
 }
