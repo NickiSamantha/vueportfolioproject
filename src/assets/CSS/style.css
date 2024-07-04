@@ -2,7 +2,7 @@
 /* App */
 
 #app {
-  font-family: "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -24,7 +24,9 @@
   }
 
   .navbar {
-    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);}
+    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
+    
+  }
  .dropdown-menu {
   background: linear-gradient( #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
     
@@ -47,7 +49,7 @@ img[alt='logo'] {
     width: 5rem ;
     border: 1px solid pink;
     cursor: pointer;
-    background-color: transparent;
+   
 }
 
 .btn:hover {
@@ -62,6 +64,17 @@ img[alt='logo'] {
 .display-1 {
  font-family: "Playfair Display", serif;
 }
+h2 , h3 , h4 , p {
+  font-family: "Playfair Display", serif;
+}
+/*Landing Page*/
+.landpic {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 300px ;
+  width: 29rem;
+  margin-top: 3rem;
+  box-shadow: 10px 10px 20px grey;
+}
 
 /*About*/
 .about-text {
@@ -73,7 +86,7 @@ img[alt='logo'] {
     font-family: "Playfair Display", serif;
 
   }
-
+/*MEDIA QUERIES*/
   @media only screen and (max-width:720px) {
  
     .Bg {
@@ -86,9 +99,18 @@ img[alt='logo'] {
        overflow: hidden;
       
   }
+  .navbar{
+    background:none;
+  }
   .landing {
     flex-direction: column;
     margin-top: 20px;
+  }
+  .titleLand{
+    padding-top:3rem;
+  }
+  .landpic{
+    margin-top: 4rem;
   }
   .col {
     order: initial !important;
@@ -97,47 +119,7 @@ img[alt='logo'] {
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 1s ease-in-out;
   }
-
-  /*animation media query*/
-
-  @keyframes hop {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-    70% {
-      transform: translateY(-5%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
-
-  .hop-enter-active,
-  .hop-leave-active {
-    transition: all 2s ease;
-  }
-
-  img, #details {
-    animation: hop 2s ease-in-out;
-  }
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    background-color: #f4dde6; 
-  }
-  
-  .card:hover .quote-text {
-    color: #0c0c0c; 
-  }
 }
-
-
-  
     @media (max-width: 900px) {
       .card {
         width: 100%; 

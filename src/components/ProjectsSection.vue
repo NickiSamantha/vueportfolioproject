@@ -1,13 +1,12 @@
 <template>
     <div class="container mt-5 pt-4">
-      <tasition name="fade">
         <div class="row mt-4">
-     <h1 class="display-1">PROJECTS</h1>
+     <h1 class="display-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">PROJECTS</h1>
         </div>
-      </tasition>
-  <transition name="fade">
     <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
-     <CardComp v-for="(self, id) in projects" :key="id" class="p-2 card-hover">
+     <CardComp v-for="(self, id) in projects" :key="id" class="p-2 card-hover" data-aos="fade-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">
        
         <template #cardHeader>
           <p class="name-header"> {{ self.name }} </p>   
@@ -33,15 +32,14 @@
      </CardComp>
    </div> 
    <SpinnerComp v-else /> 
-  </transition>
- 
-  
  </div>
 </template>
 
 <script>
 import SpinnerComp from "@/components/Spinner.vue";
 import CardComp from "@/components/Card.vue";
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 export default {
  name: "ProjectsComp",
 
@@ -59,12 +57,23 @@ export default {
  created() {
    this.$store.dispatch("fetchProjects");
  },
+ mounted() {
+    this.initAOS();
+  },
  methods: {
     async fetchProjects() {
       this.loading = true;
       await this.$store.dispatch("fetchProjects");
       this.loading = false;
     },
+    initAOS() {
+      AOS.init({
+        offset: 200,
+        duration: 2000,
+        easing: 'ease',
+        anchorPlacement: 'bottom-top' 
+      });
+    }
   },
  components: {
   SpinnerComp,
@@ -74,19 +83,7 @@ export default {
 </script>
 
 <style  scoped>
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0;
-}
+@import 'aos/dist/aos.css';
 
 .name-header {
   height: 30px;

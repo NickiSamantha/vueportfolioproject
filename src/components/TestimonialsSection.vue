@@ -9,9 +9,9 @@
       v-for="(self, index) in testimonials" 
       :key="index" 
       class="col-md-4 col-sm-12 p-2 card"
-      data-aos="fade-up"
+      data-aos="fade-down"
       data-aos-anchor-placement="top-bottom"
-      data-aos-delay="index * 100"
+      data-aos-delay="index * 1000"
       >
         <template #cardHeader>
           <img
@@ -55,24 +55,15 @@
       SpinnerComp,
       CardComp,
     },
-
-    beforeUnmount() {
-    window.removeEventListener('scroll', this.initAOS);
-  },
     mounted() {
     this.initAOS();
-    window.addEventListener('scroll', this.initAOS);
   },
-
-
-
   methods: {
     initAOS() {
       AOS.init({
         offset: 200,
         duration: 2000,
         easing: 'ease',
-        once: false,
         anchorPlacement: 'bottom-top' 
       });
     }
@@ -82,11 +73,7 @@
  
   
  <style scoped>
-
- 
-
 @import 'aos/dist/aos.css';
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -117,12 +104,7 @@
 /* Hover effect */
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  background-color: #f1bed5; /* Change background color on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f1bed5;
 }
-
-.card:hover .quote-text {
-  color: #0c0c0c; /* Change text color on hover */
-}
-
  </style>

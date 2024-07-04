@@ -1,12 +1,18 @@
 <template>
     <div class="skills-container  ">
       <div class="container mt-5 pt-5 ">
-        <h2>SKILLS</h2>
+        <h2 data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">SKILLS</h2>
         <div class="row mt-5">
-          <h3>Technical Skills</h3>
+          <h3 data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">Technical Skills</h3>
         </div>
-        <div class="row skills-row" v-if="skills?.length">
-          <div v-for="(skill, index) in skills" :key="index" class="col-md-4 mb-4 col-sm-12 mb-5 pt-5">
+        <div class="row skills-row" v-if="skills?.length" >
+          <div v-for="(skill, index) in skills" :key="index" class="col-md-4 mb-4 col-sm-12 mb-5 pt-5" data-aos="fade-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -29,10 +35,15 @@
   
       <div class="container pt-4">
         <div class="row mt-5 pt-5">
-          <h3>Soft Skills</h3>
+          <h3 data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">Soft Skills</h3>
         </div>
-        <div class="row skills-row" v-if="softskills?.length">
-          <div v-for="(skill, index) in softskills" :key="index" class="col-md-4 col-sm-12 mb-4 pt-4">
+        <div class="row skills-row" v-if="softskills?.length" >
+          <div v-for="(skill, index) in softskills" :key="index" class="col-md-4 col-sm-12 mb-4 pt-4" 
+          data-aos="fade-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay="index * 1000">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -53,6 +64,8 @@
   </template>
   
   <script>
+   import AOS from 'aos';
+   import 'aos/dist/aos.css';
   import SpinnerComp from "@/components/Spinner.vue";
   
   export default {
@@ -72,6 +85,19 @@
       this.$store.dispatch("fetchSkills");
       this.$store.dispatch("fetchSoftskills");
     },
+    mounted() {
+    this.initAOS();
+  },
+  methods: {
+    initAOS() {
+      AOS.init({
+        offset: 200,
+        duration: 2000,
+        easing: 'ease',
+        anchorPlacement: 'bottom-top' 
+      });
+    }
+  }
   };
   </script>
   

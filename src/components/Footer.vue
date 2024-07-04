@@ -1,8 +1,6 @@
 <template>
     
     <div class="container-fluid background">
-        <!-- /*take the entire width of a page*/ -->
-
 <div class="row sticky-bottom pt-3">
     <p class="lead">Nicki's Portfolio &copy; 
         <span> {{ cYear }}</span>

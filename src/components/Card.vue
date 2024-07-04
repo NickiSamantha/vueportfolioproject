@@ -24,7 +24,7 @@
 <style  scoped>
 .card {
   width: 18rem;
-  margin: auto; /* Center the card */
+  margin: auto; 
 }
 
 
