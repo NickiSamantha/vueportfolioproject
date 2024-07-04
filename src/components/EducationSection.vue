@@ -40,7 +40,7 @@
   
   <style  scoped>
   .border-resume{
-      border:5px solid #C0E9ED;
+      border:2px solid black;
       padding: 5px ;
       background: #CDEDDD;
       width: 65%;

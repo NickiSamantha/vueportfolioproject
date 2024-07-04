@@ -113,6 +113,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border: 1px solid black;
   }
   
   .flip-card-front {
@@ -155,6 +156,7 @@
     padding: 10px;
     word-wrap: break-word;
     text-align: center;
+    border: 1px solid black;
   }
   .skill-icon, 
   .skill-title {

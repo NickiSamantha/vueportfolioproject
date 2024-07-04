@@ -1,10 +1,13 @@
 <template>
     <div class="container mt-5 pt-4">
-   <div class="row mt-4">
+      <tasition name="fade">
+        <div class="row mt-4">
      <h1 class="display-1">PROJECTS</h1>
-   </div>
-   <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
-     <CardComp v-for="(self, id) in projects" :key="id" class="p-2">
+        </div>
+      </tasition>
+  <transition name="fade">
+    <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
+     <CardComp v-for="(self, id) in projects" :key="id" class="p-2 card-hover">
        
         <template #cardHeader>
           <p class="name-header"> {{ self.name }} </p>   
@@ -30,6 +33,9 @@
      </CardComp>
    </div> 
    <SpinnerComp v-else /> 
+  </transition>
+ 
+  
  </div>
 </template>
 
@@ -39,6 +45,11 @@ import CardComp from "@/components/Card.vue";
 export default {
  name: "ProjectsComp",
 
+ data(){
+  return {
+    loading:true,
+  };
+ },
  computed: {
    projects() {
      return this.$store.state.projects;
@@ -48,6 +59,13 @@ export default {
  created() {
    this.$store.dispatch("fetchProjects");
  },
+ methods: {
+    async fetchProjects() {
+      this.loading = true;
+      await this.$store.dispatch("fetchProjects");
+      this.loading = false;
+    },
+  },
  components: {
   SpinnerComp,
   CardComp
@@ -56,6 +74,19 @@ export default {
 </script>
 
 <style  scoped>
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
 
 .name-header {
   height: 30px;
@@ -101,5 +132,9 @@ export default {
 .card-header img {
   width: 50%;
   height: auto;
+}
+.card-hover:hover {
+  box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.1s ease-in-out;
 }
 </style>

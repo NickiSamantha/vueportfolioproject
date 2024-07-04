@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .border-resume{
-    border:2px solid pink;
+    border:2px solid black;
     padding: 5px ;
     background: #CDEDDD;  
 }

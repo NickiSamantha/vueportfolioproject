@@ -41,6 +41,7 @@ img {
     object-fit: cover; /*change between cover and contain*/
     object-position: center;
     border-radius: 1rem;
+    animation: hop 2s ease-in-out;
 }
 img[alt='logo'] {
     width: 5rem ;
@@ -50,13 +51,11 @@ img[alt='logo'] {
 }
 
 .btn:hover {
-  background-color: rgb(251, 211, 217);
-  color: white;
+ color: white;
 }
 
 /*wrapper*/
 :is(.wrapper){
-    
   background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
 }
 /*Fonts*/
@@ -86,6 +85,17 @@ img[alt='logo'] {
        width:100%;
        overflow: hidden;
       
+  }
+  .landing {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .col {
+    order: initial !important;
+  }
+  .card-hover:hover {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease-in-out;
   }
 
   /*animation media query*/

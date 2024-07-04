@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-5">
-      <div class="row vh-100 align-items-center">
-        <div class="col mt-5">
+      <div class="row vh-100 align-items-center landing flex-column flex-md-row">
+        <div class="col-md-6 mt-5 order-1 order-md-1">
           <transition name="hop">
             <img
             src="https://nickisamantha.github.io/allImages/images/Nicki.jpg"
@@ -13,15 +13,14 @@
           </transition>
          
         </div>
-        <div class="col">
+        <div class="col-md-6 order-2 order-md-2">
           <transition name="hop">
             <div id="details" v-show="detailsVisible">
             <h1 class="display-1 ">NICKI ABELS</h1>
             <p v-if="jobTitle ">
               I am an aspiring 
               <span>{{ title }} </span>
-              <!-- <span class="d-block">{{ jobTitle[0]?.personalStatement }}</span> -->
-            </p>
+           </p>
            <Spinner v-else/>
           </div>
           </transition>
@@ -36,6 +35,7 @@
   import Spinner from './Spinner.vue'
   import { computed, onMounted, ref } from "vue";
   import { useStore } from "vuex";
+  
   const store = useStore();
   const jobTitle = computed(() => store.state.jobTitle);
   const title = ref("Web Developer");
@@ -55,13 +55,15 @@
     }
   }
   onMounted(() => {
-    store.dispatch("fetchJobTitle");
-    repeat();
+    store.dispatch("fetchJobTitle"). then (() => {
+      repeat();
     //hop js
     setTimeout(() => {
     imageVisible.value = true;
     detailsVisible.value = true;
-  }, 2000);
+  }, 100);
+
+  });
   });
   </script>
   

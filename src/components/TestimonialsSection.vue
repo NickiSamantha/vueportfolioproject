@@ -73,7 +73,7 @@
         duration: 2000,
         easing: 'ease',
         once: false,
-        anchorPlacement: 'bottom-top' // Ensure AOS triggers based on element's position
+        anchorPlacement: 'bottom-top' 
       });
     }
   }
