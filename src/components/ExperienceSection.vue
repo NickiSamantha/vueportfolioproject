@@ -60,7 +60,7 @@ export default {
 <style scoped>
 .border-resume{
     border:2px solid black;
-    padding: 5px ;
+    padding: 2px ;
     background: #CDEDDD;  
 }
 .container {

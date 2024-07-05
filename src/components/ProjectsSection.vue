@@ -100,6 +100,7 @@ export default {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  font-family: "Playfair Display", serif;
 }
 
 .btn:hover {

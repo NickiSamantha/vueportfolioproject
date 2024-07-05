@@ -88,7 +88,7 @@ h2 , h3 , h4 , p {
   }
 /*MEDIA QUERIES*/
   @media only screen and (max-width:720px) {
- 
+
     .Bg {
 
       flex-direction:column;
@@ -99,9 +99,7 @@ h2 , h3 , h4 , p {
        overflow: hidden;
       
   }
-  .navbar{
-    background:none;
-  }
+  
   .landing {
     flex-direction: column;
     margin-top: 20px;
@@ -125,6 +123,7 @@ h2 , h3 , h4 , p {
         width: 100%; 
         margin-bottom: 20px;
       }
+      
     }
     
     .card-header {

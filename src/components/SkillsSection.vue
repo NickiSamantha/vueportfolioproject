@@ -22,6 +22,10 @@
                   <div class="skill-title">
                     <p>{{ skill.title }}</p>
                   </div>
+                  <div class="click-here">
+                    <span>Click Here &#8594;</span>
+                    <div class="arrow"></div>
+                  </div>
                 </div>
                 <div class="flip-card-back">
                   <p>{{ skill.description }}</p>
@@ -49,6 +53,10 @@
                 <div class="flip-card-front">
                   <div class="skill-title">
                     <p>{{ skill.title }}</p>
+                  </div>
+                  <div class="click-here ">
+                    <span>Click Here &#8594;</span>
+                    <div class="arrow"> </div>
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -170,8 +178,48 @@
     font-size: 18px;
     margin-bottom: 5px;
   }
+ .click-here  {
+  display: none;
+ }
   
   @media (max-width: 768px) {
+     /*Click Here animation*/ 
+    .click-here{
+      display:flex;
+      position:absolute;
+       bottom: 10px;
+       /* background: white; */
+    color: rgb(4, 4, 4);
+    /* padding:5px 10px; */
+    border-radius: 5px;
+    font-size: 16px;
+    animation:blink 1.5s infinite;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Playfair Display", serif;
+    }
+    @keyframes blink {
+      0%, 100% {opacity: 1;}
+      50% {opacity:0;}
+    }
+    .arrow{
+      width:0;
+      height:0;
+      /* border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid transparent; */
+      animation: moveArrow 1.5s infinite;
+      font-family: "Playfair Display", serif;
+    }
+    @keyframes moveArrow {
+      0%, 100% {
+        transform:translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
   .flip-card-inner {
     height: auto;
   }
@@ -234,10 +282,8 @@
     background-color: #fce6d3;
     color: #0c0c0c;
     padding: 3px;
-    transform: rotateY(180deg);
-   
+    transform: rotateY(180deg); 
   }
-
 }
   </style>
   

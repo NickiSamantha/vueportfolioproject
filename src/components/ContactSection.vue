@@ -36,7 +36,7 @@
           <p><strong>Name:</strong> Nicki S Abels</p>
           <p><strong>Email:</strong> nickisabels73@gmail.com</p>
           <p><strong>Phone:</strong> 067 775 8935</p>
-          <p><strong>Address:</strong> Retreat, Cape Town</p>
+          <p><strong>Location:</strong> Retreat, Cape Town</p>
 
           <ul class="social-icons">
             <a href="https://github.com/NickiSamantha" class="btn pink-border" target="_blank">
@@ -82,6 +82,7 @@
     border: 1px solid pink;
     border-radius: 0.5rem;
    background: #fdeeed;
+   font-family: "Playfair Display", serif;
 }
 .contact-card {
     max-width: 25rem;
