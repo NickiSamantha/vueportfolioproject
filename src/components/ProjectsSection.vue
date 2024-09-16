@@ -1,66 +1,75 @@
 <template>
-    <div class="container mt-5 pt-4">
-        <div class="row mt-4">
-     <h1 class="display-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">PROJECTS</h1>
-        </div>
-    <div class="row items pt-3 p-4 gap-4 col-12 " v-if="projects?.length">
-     <CardComp v-for="(self, id) in projects" :key="id" class="p-2 card-hover" data-aos="fade-down"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-delay="index * 1000">
-       
+  <div class="container mt-5 pt-4">
+    <div class="row mt-4">
+      <h1
+        class="display-1"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        PROJECTS
+      </h1>
+    </div>
+    <div class="row items pt-3 p-2 gap-4" v-if="projects?.length">
+      <CardComp
+        v-for="(self, id) in projects"
+        :key="id"
+        class="card-hover"
+        data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="index * 1000"
+      >
         <template #cardHeader>
-          <p class="name-header"> {{ self.name }} </p>   
-           <img
+          <img
             class="img-fluid"
             :src="self.image"
             :alt="self.name"
             loading="lazy"
           />
         </template>
-          <template #cardBody>
-            <div class="description-container">
-              <p class="description-text">{{ self.description }}</p>
-            </div>
-            
-           <a :href="self.github" target="_blank" class="btn pink-border">
+        <template #cardBody>
+              <p class="name-header">{{ self.name }}</p>
+          <div class="description-container">
+            <p class="description-text">{{ self.description }}</p>
+          </div>
+
+          <a :href="self.github" target="_blank" class="btn pink-border">
             <i class="fa-brands fa-github"></i>
           </a>
           <a :href="self.vercel" target="_blank" class="btn pink-border">
             View Project
           </a>
         </template>
-     </CardComp>
-   </div> 
-   <SpinnerComp v-else /> 
- </div>
+      </CardComp>
+    </div>
+    <SpinnerComp v-else />
+  </div>
 </template>
 
 <script>
 import SpinnerComp from "@/components/Spinner.vue";
 import CardComp from "@/components/Card.vue";
-import AOS from 'aos';
-  import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
- name: "ProjectsComp",
+  name: "ProjectsComp",
 
- data(){
-  return {
-    loading:true,
-  };
- },
- computed: {
-   projects() {
-     return this.$store.state.projects;
-   },
- 
- },
- created() {
-   this.$store.dispatch("fetchProjects");
- },
- mounted() {
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  computed: {
+    projects() {
+      return this.$store.state.projects;
+    },
+  },
+  created() {
+    this.$store.dispatch("fetchProjects");
+  },
+  mounted() {
     this.initAOS();
   },
- methods: {
+  methods: {
     async fetchProjects() {
       this.loading = true;
       await this.$store.dispatch("fetchProjects");
@@ -70,25 +79,24 @@ export default {
       AOS.init({
         offset: 200,
         duration: 2000,
-        easing: 'ease',
-        anchorPlacement: 'bottom-top' 
+        easing: "ease",
+        anchorPlacement: "bottom-top",
       });
-    }
+    },
   },
- components: {
-  SpinnerComp,
-  CardComp
- }
+  components: {
+    SpinnerComp,
+    CardComp,
+  },
 };
 </script>
 
-<style  scoped>
-@import 'aos/dist/aos.css';
+<style scoped>
+@import "aos/dist/aos.css";
 
 .name-header {
   height: 30px;
   text-align: center;
-  
 }
 
 .btn {
@@ -122,7 +130,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px; 
+  height: 400px;
   overflow: hidden;
   background-color: #f7e8ef;
 }

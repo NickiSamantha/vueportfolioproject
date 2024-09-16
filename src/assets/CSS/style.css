@@ -2,75 +2,88 @@
 /* App */
 
 #app {
-     font-family: "Poppins", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #030303;
-  }
-  
-  nav {
-    padding: 30px;
-    
-  }
-  
-  nav a {
-    font-weight: bold;
-    color: #C0E9ED;
-  }
-  
-  nav a.router-link-exact-active {
-    color: #be2aa3;
-  }
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #030303;
+}
 
-  .navbar {
-    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
-    
-  }
- .dropdown-menu {
-  background: linear-gradient( #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
-    
- }
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #c0e9ed;
+}
+
+nav a.router-link-exact-active {
+  color: #be2aa3;
+}
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #cdeddd,
+    #c0e9ed,
+    #fce6d3,
+    #fad9d5,
+    #fbb7c7
+  );
+}
+.dropdown-menu {
+  background: linear-gradient(#cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
+}
 /* Universal selector*/
 
-/* Custom variables */ 
-::-webkit-scrollbar{
-    display: none;
+/* Custom variables */
+::-webkit-scrollbar {
+  display: none;
 }
-/* logo */ 
+/* logo */
 img {
-    aspect-ratio: 1 ;
-    object-fit: cover; /*change between cover and contain*/
-    object-position: center;
-    border-radius: 1rem;
-    animation: hop 2s ease-in-out;
+  aspect-ratio: 1;
+  object-fit: contain;
+  /* object-position: center; */
+  animation: hop 2s ease-in-out;
+  
 }
-img[alt='logo'] {
-    width: 5rem ;
-    border: 1px solid pink;
-    cursor: pointer;
-   
+img[alt="logo"] {
+  width: 5rem;
+  border: 1px solid pink;
+  cursor: pointer;
 }
 
 .btn:hover {
- color: white;
+  color: white;
 }
 
 /*wrapper*/
-:is(.wrapper){
-  background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);
+:is(.wrapper) {
+  background: linear-gradient(
+    90deg,
+    #cdeddd,
+    #c0e9ed,
+    #fce6d3,
+    #fad9d5,
+    #fbb7c7
+  );
 }
 /*Fonts*/
 .display-1 {
- font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 }
-h2 , h3 , h4 , p {
+h2,
+h3,
+h4,
+p {
   font-family: "Playfair Display", serif;
 }
 /*Landing Page*/
 .landpic {
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 300px ;
+  border-radius: 300px;
   width: 29rem;
   margin-top: 3rem;
   box-shadow: 10px 10px 20px grey;
@@ -78,36 +91,29 @@ h2 , h3 , h4 , p {
 
 /*About*/
 .about-text {
-    margin-bottom: 1rem;
-    /* font-size: medium; */
-  }
-  .Bg h1 {
-
-    font-family: "Playfair Display", serif;
-
-  }
+  margin-bottom: 1rem;
+}
+.Bg h1 {
+  font-family: "Playfair Display", serif;
+}
 /*MEDIA QUERIES*/
-  @media only screen and (max-width:720px) {
-
-    .Bg {
-
-      flex-direction:column;
-      
-    } 
-    :is(.wrapper){
-       width:100%;
-       overflow: hidden;
-      
+@media only screen and (max-width: 720px) {
+  .Bg {
+    flex-direction: column;
   }
-  
+  :is(.wrapper) {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .landing {
     flex-direction: column;
     margin-top: 20px;
   }
-  .titleLand{
-    padding-top:3rem;
+  .titleLand {
+    padding-top: 3rem;
   }
-  .landpic{
+  .landpic {
     margin-top: 4rem;
   }
   .col {
@@ -117,26 +123,21 @@ h2 , h3 , h4 , p {
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 1s ease-in-out;
   }
+
 }
-    @media (max-width: 900px) {
-      .card {
-        width: 100%; 
-        margin-bottom: 20px;
-      }
-      
-    }
-    
-    .card-header {
-      text-align: center;
-    }
-    
-    .card-body {
-      padding: 1rem;
-      
-    }
+@media (max-width: 900px) {
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+  }
 
+.card-header {
+  text-align: center;
+}
 
-  
+.card-body {
+  padding: 1rem;
 
-
-  
+}

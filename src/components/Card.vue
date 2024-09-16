@@ -1,32 +1,24 @@
 <template>
-  <div class="card" >
-  <div class="card-header">
-      <slot name="cardHeader">
+  <div class="card">
+    <div class="card-header mt-3">
+      <slot name="cardHeader"> </slot>
+    </div>
 
-      </slot>
-</div>
-
-<div class="card-body">
-  <slot name="cardBody">
-
-  </slot>
-</div>
-
-</div>
+    <div class="card-body">
+      <slot name="cardBody"> </slot>
+    </div>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "CardComp " 
-  }
+export default {
+  name: "CardComp ",
+};
 </script>
 
-<style  scoped>
+<style scoped>
 .card {
   width: 18rem;
-  margin: auto; 
+  margin: auto;
 }
-
-
 </style>
-

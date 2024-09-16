@@ -1,17 +1,16 @@
-<template>
-    <div class="container-fluid mt-5 pt-5 Bg">
-    <div class="row pt-3 p-4 gap-4 col-12" 
-       v-if="testimonials?.length">
+<!-- <template>
+  <div class="container-fluid mt-5 pt-5 Bg">
+    <div class="row pt-3 p-2 gap-4 " v-if="testimonials?.length">
       <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         TESTIMONIALS
       </h1>
-      <CardComp 
-      v-for="(self, index) in testimonials" 
-      :key="index" 
-      class="col-md-4 col-sm-12 p-2 card"
-      data-aos="fade-down"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-delay="index * 1000"
+      <CardComp
+        v-for="(self, index) in testimonials"
+        :key="index"
+        class="col-md-4 col-sm-12 2p-2 card"
+        data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="index * 1000"
       >
         <template #cardHeader>
           <img
@@ -32,30 +31,29 @@
     </div>
     <SpinnerComp v-else />
   </div>
+</template>
 
-  </template>
-  
-  <script>
-  import SpinnerComp from "@/components/Spinner.vue";
-  import CardComp from "@/components/Card.vue";
-  import AOS from 'aos';
-  import 'aos/dist/aos.css';
-  export default {
-    name: "TestimonialsComp",
-  
-    computed: {
-      testimonials() {
-        return this.$store.state.testimonials;
-      },
+<script>
+import SpinnerComp from "@/components/Spinner.vue";
+import CardComp from "@/components/Card.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
+export default {
+  name: "TestimonialsComp",
+
+  computed: {
+    testimonials() {
+      return this.$store.state.testimonials;
     },
-    created() {
-      this.$store.dispatch("fetchTestimonials");
-    },
-    components: {
-      SpinnerComp,
-      CardComp,
-    },
-    mounted() {
+  },
+  created() {
+    this.$store.dispatch("fetchTestimonials");
+  },
+  components: {
+    SpinnerComp,
+    CardComp,
+  },
+  mounted() {
     this.initAOS();
   },
   methods: {
@@ -63,17 +61,16 @@
       AOS.init({
         offset: 200,
         duration: 2000,
-        easing: 'ease',
-        anchorPlacement: 'bottom-top' 
+        easing: "ease",
+        anchorPlacement: "bottom-top",
       });
-    }
-  }
+    },
+  },
 };
-  </script>
- 
-  
- <style scoped>
-@import 'aos/dist/aos.css';
+</script>
+
+<style scoped>
+@import "aos/dist/aos.css";
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -84,11 +81,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 550px; 
+  height: 550px;
   overflow: hidden;
   background-color: #f7e8ef;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .card-header img {
@@ -107,4 +103,4 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   background-color: #f1bed5;
 }
- </style>
+</style> -->

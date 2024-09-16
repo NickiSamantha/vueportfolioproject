@@ -1,28 +1,34 @@
 <template>
-    
-    <div class="container-fluid background">
-<div class="row sticky-bottom pt-3">
-    <p class="lead">Nicki's Portfolio &copy; 
+  <div class="container-fluid background">
+    <div class="row sticky-bottom pt-3">
+      <p class="lead">
+        Nicki's Portfolio &copy;
         <span> {{ cYear }}</span>
-    </p>
-</div>
+      </p>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "FooterComp",
-        data () {
-            return{
-                cYear: new Date ().
-                getUTCFullYear()
-            }
-        },
-
-    }
+export default {
+  name: "FooterComp",
+  data() {
+    return {
+      cYear: new Date().getUTCFullYear(),
+    };
+  },
+};
 </script>
 
 <style scoped>
-.background{
-    background: linear-gradient(90deg, #cdeddd, #c0e9ed, #fce6d3, #fad9d5, #fbb7c7);}
+.background {
+  background: linear-gradient(
+    90deg,
+    #cdeddd,
+    #c0e9ed,
+    #fce6d3,
+    #fad9d5,
+    #fbb7c7
+  );
+}
 </style>
