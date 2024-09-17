@@ -22,7 +22,7 @@
         method="POST"
       >
         <h4 class="mt-2">
-          Please fill out the form below if you'd like more information
+          Let's work together
         </h4>
         <div class="form-group">
           <label for="name">Your Name</label>
@@ -36,7 +36,7 @@
           />
         </div>
         <div class="form-group mt-2">
-          <label for="email">Your Email</label>
+          <label for="email">Your Email Address</label>
           <input
             name="email"
             type="email"
@@ -47,7 +47,7 @@
           />
         </div>
         <div class="form-group mt-2">
-          <label for="message">Message</label>
+          <label for="message">Your Message</label>
           <textarea
             name="message"
             class="form-control"
@@ -71,7 +71,7 @@
     >
       <h2>Get in touch with me</h2>
       <p><strong>Name:</strong> Nicki S Abels</p>
-      <p><strong>Email:</strong> nickisabels73@gmail.com</p>
+      <p><strong>Email:</strong> nickiabels98@gmail.com</p>
       <p><strong>Phone:</strong> 067 775 8935</p>
       <p><strong>Location:</strong> Retreat, Cape Town</p>
 

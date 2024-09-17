@@ -59,6 +59,37 @@ img[alt="logo"] {
   color: white;
 }
 
+/* SCROLLBAR */
+/* Custom Scrollbar Styles for Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 20px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    #cdeddd,
+    #c0e9ed,
+    #fce6d3,
+    #fad9d5,
+    #fbb7c7
+  );
+ 
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #e0a1b1;
+  
+  border-radius: 10px;
+  opacity: 1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0a1b1; /* Slightly darker on hover */
+}
+
+
 /*wrapper*/
 :is(.wrapper) {
   background: linear-gradient(
