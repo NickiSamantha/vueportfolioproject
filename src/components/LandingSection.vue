@@ -22,10 +22,10 @@
       >
         <div id="details" class="titleLand">
           <h1 class="display-1">NICKI ABELS</h1>
-          <p v-if="jobTitle">
+          <h4 v-if="jobTitle">
             I am an aspiring
             <span>{{ title }} </span>
-          </p>
+          </h4>
           <Spinner v-else />
         </div>
       </div>

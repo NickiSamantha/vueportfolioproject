@@ -103,13 +103,13 @@ img[alt="logo"] {
 }
 /*Fonts*/
 .display-1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
 }
 h2,
 h3,
 h4,
 p {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
 }
 /*Landing Page*/
 .landpic {
@@ -125,7 +125,7 @@ p {
   margin-bottom: 1rem;
 }
 .Bg h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
 }
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 720px) {
