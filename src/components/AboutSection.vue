@@ -17,7 +17,7 @@
         data-aos-delay="index * 1000"
       >
         <img
-          src="https://nickisamantha.github.io/allImages/images/nickiaboutimg.jpg"
+          src="https://nickisamantha.github.io/allImages/images/niiiicki.jpg"
           alt=""
           class="img-fluid w-50"
           loading="lazy"

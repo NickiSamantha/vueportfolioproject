@@ -26,30 +26,31 @@
           <li class="nav-item">
             <a class="nav-link " href="#landing"> <i class="fa-solid fa-house-chimney"></i> Home</a>
           </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="#about"> <i class="fa-regular fa-address-card"></i> About</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false"> 
+            <i class="fa-regular fa-address-card"></i>
+              About & Skills
+            </a>
+            <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#about"><i class="fa-regular fa-address-card"></i> About</a></li>
+           <li><a class="dropdown-item" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
+            
+          </ul>
           </li>
   
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#resume" role="button" 
             data-bs-toggle="dropdown" aria-expanded="false"> 
             <i class="fa-regular fa-file"></i>
-              Resume
+              Education & Experience
             </a>
-
-            <ul class="dropdown-menu">
+           <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#education"> <i class="fa-solid fa-school"></i> Education</a></li>
-              <li><a class="dropdown-item" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
-              <li><a class="dropdown-item" href="#experience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
+             <li><a class="dropdown-item" href="#experience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
             </ul>
           </li>
-  
-          <!-- <li class="nav-item">
-            
-            <a class="nav-link" href="#testimonials"> <i class="fa-solid fa-receipt"></i> Testimonials</a>
-          </li> -->
-  
+
           <li class="nav-item">
             
             <a class="nav-link" href="#projects"> <i class="fa-solid fa-diagram-project"></i> Projects</a>

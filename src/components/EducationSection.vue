@@ -6,7 +6,7 @@
       data-aos-anchor-placement="top-bottom"
       data-aos-delay="index * 1000"
     >
-      <h1 class="display-1">Resume</h1>
+     
       <h2 class="mt-2">EDUCATION</h2>
     </div>
     <div class="row mt-5" v-if="education?.length">

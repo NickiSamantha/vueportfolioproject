@@ -72,6 +72,9 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
+                <div class="skill-icon">
+                  <img :src="skill.image" alt="Skill Icon" />
+                </div>
                 <div class="skill-title">
                   <p>{{ skill.title }}</p>
                 </div>
@@ -146,6 +149,7 @@ export default {
   height: 250px;
   perspective: 1000px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .flip-card-inner {
@@ -176,6 +180,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .flip-card-back {
@@ -185,6 +190,7 @@ export default {
   transform: rotateY(180deg);
   text-align: center;
   align-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .skill-icon img {
@@ -265,6 +271,7 @@ export default {
     height: 250px;
     perspective: 1000px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .flip-card-inner {
@@ -294,13 +301,17 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .flip-card-back {
     background-color: #fce6d3;
     color: #0c0c0c;
-    padding: 3px;
+    padding-top: 5px;
     transform: rotateY(180deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
+
+
 </style>
