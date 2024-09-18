@@ -2,7 +2,7 @@
   <div class="container-fluid background">
     <div class="row sticky-bottom pt-3">
       <p class="lead">
-        Nicki's Portfolio &copy;
+        Nicki S Abels Portfolio &copy;
         <span> {{ cYear }}</span>
       </p>
     </div>

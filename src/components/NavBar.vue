@@ -33,8 +33,8 @@
               About & Skills
             </a>
             <ul class="dropdown-menu">
-           <li><a class="dropdown-item" href="#about"><i class="fa-regular fa-address-card"></i> About</a></li>
-           <li><a class="dropdown-item" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
+           <li><a class="dropdown-item text-center" href="#about"><i class="fa-regular fa-address-card"></i> About</a></li>
+           <li><a class="dropdown-item text-center" href="#skills"> <i class="fa-solid fa-kitchen-set"></i> Skills</a></li>
             
           </ul>
           </li>
@@ -46,8 +46,8 @@
               Education & Experience
             </a>
            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#education"> <i class="fa-solid fa-school"></i> Education</a></li>
-             <li><a class="dropdown-item" href="#experience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
+              <li><a class="dropdown-item text-center" href="#education"> <i class="fa-solid fa-school"></i> Education</a></li>
+             <li><a class="dropdown-item text-center" href="#experience"> <i class="fa-solid fa-briefcase"></i> Work Experience</a></li>
             </ul>
           </li>
 

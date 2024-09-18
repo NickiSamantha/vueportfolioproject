@@ -19,7 +19,7 @@
         <img
           src="https://nickisamantha.github.io/allImages/images/niiiicki.jpg"
           alt=""
-          class="img-fluid w-50"
+          class="img-fluid w-50 abt"
           loading="lazy"
         />
       </div>
@@ -74,4 +74,7 @@ export default {
 </script>
 
 <style scoped>
+.abt{
+  border-radius: 10px;
+}
 </style>
