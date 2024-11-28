@@ -40,7 +40,7 @@
                   <div class="arrow"></div>
                 </div>
               </div>
-              <div class="flip-card-back" v-if="skill.id>12">
+              <div class="flip-card-back skill-icon" v-if="skill.id>12">
                 <img :src="skill.description" alt="Badge" />
               </div>
               <div class="flip-card-back" v-else>
