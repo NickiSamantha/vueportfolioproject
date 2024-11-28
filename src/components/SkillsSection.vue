@@ -40,7 +40,10 @@
                   <div class="arrow"></div>
                 </div>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back" v-if="skill.id>12">
+                <img :src="skill.description" alt="Badge" />
+              </div>
+              <div class="flip-card-back" v-else>
                 <p>{{ skill.description }}</p>
               </div>
             </div>
