@@ -40,7 +40,7 @@
                   <div class="arrow"></div>
                 </div>
               </div>
-              <div class="flip-card-back skill-icon" v-if="skill.id>12">
+              <div class="flip-card-back skill-badge" v-if="skill.id>12">
                 <img :src="skill.description" alt="Badge" />
               </div>
               <div class="flip-card-back" v-else>
@@ -201,6 +201,11 @@ export default {
   height: 80px;
   margin-bottom: 10px;
 }
+  .skill-badge img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
 
 .skill-title p {
   font-weight: bold;
